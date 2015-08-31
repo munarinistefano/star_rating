@@ -4,6 +4,7 @@ var rating = 10;
 
 for (var i = 0; i < 10; i++) {
 	$('#start_container').after("<div class='col-md-1'><img id='star" + i + "' src='images/emptystar.png' width='50' height='50'/></div>");
+	//$('#start_container').after("<div id='star" + i + "' class='star-five'/>");//<img id='star" + i + "' src='images/emptystar.png' width='50' height='50'/></div>");
 };
 
 var t=null;
