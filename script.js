@@ -6,6 +6,7 @@ for (var i = 0; i < 10; i++) {
 	$('#start_container').after("<div class='col-md-1'><img id='star" + i + "' src='images/emptystar.png' width='50' height='50'/></div>");
 };
 
+var t=null;
 $('img')
 	.mouseenter(function(){
 		if ($(this).attr('id')) {
@@ -13,13 +14,14 @@ $('img')
 			if (new Number(number) instanceof Number){
 				$('#hover_rating').text(10 - number);
 				changeBackground(parseInt(number));
+				clearTimeout(t);
 			}
 		};
 	})
 	.mouseleave(function(){
-		setTimeout(function() {
+		t = setTimeout(function() {
         	goBack(rating);
-    	}, 1000);
+    	}, 500);
 	})
 	.click(function(){
 		if ($(this).attr('id')) {
