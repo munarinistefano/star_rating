@@ -1,0 +1,21 @@
+body {
+    background-color: #4FCC76;
+}
+
+.container{
+	background-color: #FFD495;
+	width: 60%;
+	-moz-box-shadow: 0 0 2px black;
+    -webkit-box-shadow: 0 0 2px black;
+    box-shadow: 0 0 2px black;
+    margin: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    margin: 10px auto 10px auto;
+}
+
+p {
+	margin-left: 20px;
+	font-size: 1.25em;
+}
